@@ -1,5 +1,5 @@
 export default {
-  ssr: true,
+  ssr: false,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'MyTaxHelpers',
@@ -48,7 +48,7 @@ export default {
   ],
 
   router: {
-    base: '/',
+    base: '/mytaxhelpers/',
     mode: 'history',
     extendRoutes(routes, resolve) {
       routes.push({
@@ -61,10 +61,12 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   generate: {
-    dir: './dist_server'
+    // dir: './dist_server'
+    dir: './dist'
   },
   build: {
-    target: 'server'
+    // target: 'server'
+    target: 'static'
   },
 
   // Server Middleware
