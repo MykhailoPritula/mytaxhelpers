@@ -48,6 +48,7 @@ export default {
   ],
 
   router: {
+    // base: '/',
     base: '/mytaxhelpers/',
     mode: 'history',
     extendRoutes(routes, resolve) {
